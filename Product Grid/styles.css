@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+}
+
+a {
+  color: #47A3DA;
+}
+
+#container {
+  width: 80%;
+  margin: auto;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+section {
+  margin-bottom: 10ex;
+}
+
+span {
+  float: right;
+  text-align: center;
+  border-left: 0.3em solid #47a3da;
+  border-bottom: 0.3em solid #47a3da;
+  height: 33pt;
+  width: 33pt;
+  color: #47a3da;
+}
+
+figure {
+  margin: 0;
+  position: relative;
+
+}
+img {
+  height: auto;
+  width: auto;
+  border: 2px solid #47A3DA;
+  position: relative;
+}
+
+.back {
+  display: none;
+}
+
+nav {
+  width: 100%;
+}
+
+nav ul {
+  position: relative;
+  overflow: hidden;
+}
+
+nav ul li {
+  float: left;
+}
+
+li > .footer {
+  width: inherit;
+}
+
+.name {
+  float: left;
+}
+
+.price {
+  font-weight: bold;
+  float: right;
+}
