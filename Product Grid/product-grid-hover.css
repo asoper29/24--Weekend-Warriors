@@ -1,34 +1,25 @@
-/* body{
-  background-image:url('png-1.png');
-  background-color:gray;
-  background-repeat:no-repeat;
-}
-
-body:hover{
-  background-image:url('png.png');
-} */
 body{
   background-color:white;
 }
-#f1_container {
+#container {
   position: relative;
   margin: 10px auto;
   width: 450px;
   height: 281px;
   z-index: 1;
 }
-#f1_container {
+#container {
   perspective: 1000;
 }
-#f1_card {
+#shirt {
   width: 100%;
   height: 100%;
   transform-style: preserve-3d;
   transition: all 1.0s linear;
 }
-#f1_container:hover #f1_card {
+#container:hover #shirt {
   transform: rotateY(180deg);
-  box-shadow: 0px 0px 0px #aaa;
+
 }
 .face {
   position: absolute;
@@ -43,5 +34,4 @@ body{
   padding: 10px;
   color: white;
   text-align: center;
-  background-color: white;
 }
