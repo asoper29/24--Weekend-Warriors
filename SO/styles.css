@@ -42,7 +42,7 @@ h1, h2, h3, h4, h5, h6 {
   color: inherit;
 }
 h3 {
-  color: red;
+  color: white;
 
 }
 
@@ -68,6 +68,10 @@ li {
   /* background-color: #47A3DA  ; */
 }
 
+.menu h3:hover {
+  color: #02639D;
+}
+
 .menu ul {
   margin: 1ex -3em;
   width: 100%;
@@ -76,18 +80,16 @@ li {
 /*======  submenu list  ======*/
 .menu > li .submenu {
   display: block;
-  transition-property: color;
-  transition-duration: 0.5s;
 }
 
+
+/*==== color change, test that each beverage gets its own hover ====*/
 .menu > li .submenu > li:hover {
   transition-property: color;
-  transition-duration: 1s;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-out;
   color: red;
 }
-
-/* ===== end submenu ======*/
-
 
 
 .menu > li.open .submenu {
