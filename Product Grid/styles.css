@@ -20,7 +20,7 @@ section {
   margin-bottom: 10ex;
 }
 
-span {
+.fa-repeat {
   float: right;
   text-align: center;
   border-left: 0.3em solid #47a3da;
@@ -70,4 +70,10 @@ li > .footer {
 .price {
   font-weight: bold;
   float: right;
+}
+
+@media (min-width: 400px) {
+  ul li {
+    float: left;
+  }
 }
