@@ -1,3 +1,18 @@
+
+/* Div Divider/Container Color */
+
+background-color: #47A3DA
+
+
+/* Page Background Color for page */
+
+background-color: #FFFFFF
+
+/* Div Gray Divider Container Color */
+
+background-color: #F7F7F7;
+
+
 html, body {
   font-size: 14pt;
   font-family: 'Lato', Calibri, Arial, sans-serif;
@@ -38,10 +53,24 @@ li {
   width: 100%;
 }
 
+<<<<<<< HEAD
 
 .menu > li .submenu {
   display: none;
 }
+
+.menu > li .submenu {
+  display: block;
+  transition-property: color;
+  transition-duration: 0.5s;
+}
+
+.menu > li .submenu > li:hover {
+  transition-property: color;
+  transition-duration: 1s;
+  color: red;
+}
+
 .menu > li.open .submenu {
   display: block;
 }
