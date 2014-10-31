@@ -1,0 +1,110 @@
+/* Div Divider/Container Color */
+
+background-color: #47A3DA
+
+
+/* Page Background Color for page */
+
+background-color: #FFFFFF
+
+/* Div Gray Divider Container Color */
+
+background-color: #F7F7F7;
+
+
+
+/* Media Query Widths:
+
+Small (Mobile) : 400px
+Medium (Landscape) : 823px
+Large (Tablet) : 880px
+X-Large (Desktop) : 1440px
+
+*/
+
+/*
+
+Sizes :
+
+*/
+
+font-family: 'Lato', Calibri, Arial, sans-serif;
+
+----
+
+
+html, body {
+  font-size: 14pt;
+  font-family: 'Lato', Calibri, Arial, sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0; padding: 0;
+  color: inherit;
+}
+h3 {
+  color: red;
+
+}
+
+ul {
+  margin: 0; padding: 0;
+  list-style-type: none;
+}
+li {
+  padding: .5ex 0;
+}
+
+.menu > li {
+  margin: 0;
+  padding: 1ex 0; padding-left: 3em;
+  background-color: #47A3DA  ;
+  width: 102%;
+}
+
+.menu h3 {
+  font-size: 130%;
+  line-height: 3ex;
+  font-weight: normal;
+  /* background-color: #47A3DA  ; */
+}
+
+.menu ul {
+  margin: 1ex -3em;
+  width: 100%;
+}
+
+/*======  submenu list  ======*/
+.menu > li .submenu {
+  display: block;
+  transition-property: color;
+  transition-duration: 0.5s;
+}
+
+.menu > li .submenu > li:hover {
+  transition-property: color;
+  transition-duration: 1s;
+  color: red;
+}
+
+/* ===== end submenu ======*/
+
+
+
+.menu > li.open .submenu {
+  display: block;
+}
+
+.open {
+  background: blue;
+  color: white;
+}
+
+.open h3 {
+  color: white;
+  margin-bottom: 3ex;
+}
+
+.menu ul>li {
+  background-color: white;
+  width: 100%;
+}
