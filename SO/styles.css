@@ -1,9 +1,14 @@
-html, body {
+html, body, {
   font-size: 14pt;
+<<<<<<< HEAD
+=======
+  font-family: 'Lato', Calibri, Arial, sans-serif;
+>>>>>>> ae9d2426ed972f820735f0bc39b4a8ef52f6f662
   margin:0 0;
 }
 h1, h2, h3, h4, h5, h6 {
   margin: 0; padding: 0;
+  font-family: 'Lato', Calibri, Arial, sans-serif;
   color: inherit;
 }
 h3 {
@@ -21,7 +26,11 @@ li {
 
 .menu > li {
   margin: 0;
+<<<<<<< HEAD
   padding: 1em 0 0 3em;
+=======
+  padding: 0.75em 0 0 3em;
+>>>>>>> ae9d2426ed972f820735f0bc39b4a8ef52f6f662
   background-color: #47A3DA;
   width: 102%;
 }
@@ -30,7 +39,7 @@ li {
   font-size: 130%;
   line-height: 3ex;
   font-weight: normal;
-  /* background-color: #47A3DA  ; */
+  /* background-color: #47A3DA; */
 }
 
 .menu ul {
@@ -38,15 +47,53 @@ li {
   width: 100%;
 }
 
+<<<<<<< HEAD
 .menu > li > h3 {
   height: 4.3%;
   padding-bottom: 5px;
   padding-top: 0;
   margin: 0.2em 0 0.6em -6em;
   text-align:center;
+=======
+
+ .menu > li > h3 {
+  height: 2ex;
+  margin: 0.2em 0 0.6em -6em;
+  text-align: center;
+  padding-bottom: 5px;
+  padding-top: 0;
+
 }
 
 .menu ul>li {
   background-color: white;
   width: 100%;
+}
+
+/*  \f107 and \f106  used for the cheveron symbol in the heading menu.  Not sure if this will work.  Seem to be special unicode symbols.  This needs to be added above for the origional state */
+
+h3:hover{
+  color: #02639d  ;
+}
+
+.menu > h3::before:hover {    /* this is the the ^ symbol.  May list this in a before section.  Only color changes on hover.  The color will stay and symbol will change on click. */
+  color: #02639d  ;
+>>>>>>> ae9d2426ed972f820735f0bc39b4a8ef52f6f662
+}
+
+
+/* changing the bottle, including code needed in the img area that hover needs
+* TODO  the paths below needs to be updated when html code and css above match.
+*/
+.menu > li > li {
+  transition: opacity .2s
+
+}
+.menu > li > li:hover{
+  opacity: 0.5s;
+
+}
+
+.menu > li > li:onclick {
+  transition: opacity .1s 0s;  /*this should be for the onclick javascript grey box*/
 }
