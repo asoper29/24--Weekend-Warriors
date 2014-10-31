@@ -73,7 +73,6 @@ li {
   width: 100%;
 }
 
-
 .menu > li .submenu {
   display: none;
 }
@@ -94,4 +93,28 @@ li {
 .menu ul>li {
   background-color: white;
   width: 100%;
+}
+
+/*  \f107 and \f106  used for the cheveron symbol in the heading menu.  Not sure if this will work.  Seem to be special unicode symbols.  This needs to be added above for the origional state */
+
+.menu > h3:hover {
+  color: #02639d;
+}
+.menu > h3::before:hover {     /* this is the the ^ symbol.  May list this in a before section.  Only color changes on hover.  The color will stay and symbol will change on click. */
+  color: #02639d;
+}
+
+
+/* changing the bottle, including code needed in the img area that hover needs */
+.menu > li > li {
+  transition: opacity .2s
+
+}
+.menu > li > li:hover{
+  opacity: 0.5s;
+
+}
+
+.menu > li > li:onclick {
+  transition: opacity .1s 0s;  /*this should be for the onclick javascript grey box*/
 }
