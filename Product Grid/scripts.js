@@ -10,46 +10,30 @@ IMG  back
 
 */
 
-function clickNavItem(event){
-   if (isFront(this.nextSibling.display)){
-     flipIt(this.nextSibling);
-   } else if (isBack(this.nextSibling.display)){
-     flipIt(this.nextSibling);
-   }
+var repeatIcons = document.getElementsById('repeater');
+      _.each(repeatIcons, function(repeatIcon){
+        repeatIcon.onclick = clickRepeatIcon;
+      });
+
+function clickRepeatIcon(event){
+    // this.parentElement - apply CSS tranistion
+    // Need CSS transition call
 }
 
-function flipIt (){
 
-}
 
+
+
+// Ramblings -Nhare
+
+// function flipIt (){
+//
+// }
+//
 // function isFront (){
 //   return (display === 'initial');
 // }
 //
 // function isBack (){
 //   return (display === 'none');
-// }
-
-// function flipFront (){
-//
-// }
-//
-// function flipBack (){
-//
-// }
-
-
-// var navItems = document.getElementsByTagName('h3');
-//       _.each(navItems, function(navItem){
-//         navItem.onclick = clickNavItem;
-//       });
-
-// function clickNavItem(event){
-//    if (isClosed(this.parentElement)){
-//      makeEverythingClosed(navItems);
-//      makeItOpen(this.parentElement);
-//      //otherwise if this navItem is open
-//    } else if (isOpen(this.parentElement)){
-//      makeItClosed(this.parentElement);
-//    }
 // }

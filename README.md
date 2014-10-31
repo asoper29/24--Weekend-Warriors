@@ -1,6 +1,7 @@
+**Note:** Please remember to _always_ pull before pushing. (good practice to avoid merge conflicts later)
+
 #TIY Orlando HTML / CSS Assignment 24 
 -------------------------------------
-
 
 ##Responsive Product Grid Layout
 
