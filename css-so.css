@@ -105,7 +105,9 @@ li {
 }
 
 
-/* changing the bottle, including code needed in the img area that hover needs */
+/* changing the bottle, including code needed in the img area that hover needs 
+* TODO  the paths below needs to be updated when html code and css above match. 
+*/
 .menu > li > li {
   transition: opacity .2s
 
