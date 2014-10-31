@@ -18,7 +18,7 @@ ul {
 }
 
 section {
-  margin-bottom: 10ex;
+  margin-bottom: 14ex;
 }
 
 section li {
@@ -30,21 +30,20 @@ section li {
   text-align: center;
   border-left: 3pt solid #47a3da;
   border-bottom: 3pt solid #47a3da;
-  height: 26pt;
-  width: 26pt;
+  height: 12%;
+  width: 14%;
   color: #47a3da;
-  line-height: 30pt;
+  line-height: 34pt;
   position: absolute;
-  left: 85%;
+  left: 83%;
 }
 
 img {
-  height: 78%;
-  width: 78%;
+  height: 76%;
+  width: 76%;
   border: 3pt solid #47A3DA;
   position: relative;
   padding: 14% 10.3%;
-  cursor: pointer;
 }
 
 .back {
@@ -53,6 +52,7 @@ img {
 
 nav {
   width: 100%;
+  margin-top: -1.5%;
 }
 
 nav ul {
@@ -62,19 +62,38 @@ nav ul {
 
 nav ul li {
   float: left;
+  width: 18.05%;
+  height: 20%;
+  border-bottom: 3pt solid #47a3da;
+  border-left: 3pt solid #47a3da;
+  text-align: center;
+  line-height: 32pt;
+}
+
+nav ul li:last-child {
+  border-right: 3pt solid #47a3da;
 }
 
 li > .footer {
   width: inherit;
+  font-family: 'Lato', Calibri, Arial, sans-serif;
+  margin-top: 1ex;
 }
 
 .name {
   float: left;
+  color: #47a3da;
+  font-size: 1.8em;
+  width: 50%;
+  margin: 0;
 }
 
 .price {
+  font-size: 22pt;
   font-weight: bold;
+  color: rgb(71, 163, 218);
   float: right;
+  margin: 0;
 }
 
 @media (min-width: 400px) {

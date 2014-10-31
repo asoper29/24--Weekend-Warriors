@@ -21,8 +21,13 @@ li {
 
 .menu > li {
   margin: 0;
+<<<<<<< HEAD
   padding: 0.75em 0 0 3em;
   background-color: #47A3DA;
+=======
+  padding: 1em 0 0 3em;
+  background-color: #47A3DA  ;
+>>>>>>> origin/so-css
   width: 102%;
 }
 
@@ -38,12 +43,20 @@ li {
   width: 100%;
 }
 
+<<<<<<< HEAD
  .menu > li > h3 {
   height: 2ex;
   margin: 0.2em 0 0.6em -6em;
   text-align: center;
   padding-bottom: 5px;
   padding-top: 0;
+=======
+.menu > li > h3 {
+  height: 4.3%;
+  padding-bottom: 5px;
+  padding-top: 0;
+  margin: -2px;
+>>>>>>> origin/so-css
 }
 
 .menu ul>li {
