@@ -10,7 +10,7 @@ IMG  back
 
 */
 
-var repeatIcons = document.getElementsById('repeater');
+var repeatIcons = document.getElementsByTagName('span');
       _.each(repeatIcons, function(repeatIcon){
         repeatIcon.onclick = clickRepeatIcon;
       });
