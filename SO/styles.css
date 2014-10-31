@@ -1,9 +1,6 @@
 html, body, {
   font-size: 14pt;
-<<<<<<< HEAD
-=======
   font-family: 'Lato', Calibri, Arial, sans-serif;
->>>>>>> ae9d2426ed972f820735f0bc39b4a8ef52f6f662
   margin:0 0;
 }
 h1, h2, h3, h4, h5, h6 {
@@ -26,11 +23,7 @@ li {
 
 .menu > li {
   margin: 0;
-<<<<<<< HEAD
-  padding: 1em 0 0 3em;
-=======
   padding: 0.75em 0 0 3em;
->>>>>>> ae9d2426ed972f820735f0bc39b4a8ef52f6f662
   background-color: #47A3DA;
   width: 102%;
 }
@@ -46,15 +39,6 @@ li {
   margin: 1ex -3em;
   width: 100%;
 }
-
-<<<<<<< HEAD
-.menu > li > h3 {
-  height: 4.3%;
-  padding-bottom: 5px;
-  padding-top: 0;
-  margin: 0.2em 0 0.6em -6em;
-  text-align:center;
-=======
 
  .menu > li > h3 {
   height: 2ex;
@@ -78,7 +62,7 @@ h3:hover{
 
 .menu > h3::before:hover {    /* this is the the ^ symbol.  May list this in a before section.  Only color changes on hover.  The color will stay and symbol will change on click. */
   color: #02639d  ;
->>>>>>> ae9d2426ed972f820735f0bc39b4a8ef52f6f662
+  
 }
 
 
