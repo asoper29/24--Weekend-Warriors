@@ -1,4 +1,4 @@
-TIY Orlando HTML / CSS Assignment 24 
+#TIY Orlando HTML / CSS Assignment 24 
 -------------------------------------
 
 
@@ -8,12 +8,14 @@ TIY Orlando HTML / CSS Assignment 24
 * [ ] Mobile-First
 * [ ] Tablet
 * [ ] Desktop
+
 ### Functionality
 * [ ] Onclick shirt flip
 * [ ] Onclick shirt flip-back
 * [ ] HTML blocking/layout
 * [ ] Skitch the site
 * [ ] CSS Styling/Transitions
+
 ###Creating a 'style guide' with:
 * [ ] colors
 * [ ] hover effects
@@ -24,6 +26,7 @@ TIY Orlando HTML / CSS Assignment 24
 * [ ] line thickness/weight/height
 * [ ] icons or fancier icons or WHATEVER ELSE YOU FIND!!!
 * [ ] Source Placeholder images
+
 ###Final touches
 * [ ] Make pixel perfect
 
@@ -34,6 +37,7 @@ TIY Orlando HTML / CSS Assignment 24
 * [ ] Mobile-First
 * [ ] Tablet
 * [ ] Desktop
+
 ###Functionality
 * [ ] Drop down
 * [ ] slide up
@@ -42,6 +46,7 @@ TIY Orlando HTML / CSS Assignment 24
 * [ ] HTML blocking/layout
 * [ ] Skitch the site
 * [ ] CSS Styling/Transitions
+
 ###Creating a 'style guide' with:
 * [ ] colors
 * [ ] hover effects
@@ -52,5 +57,6 @@ TIY Orlando HTML / CSS Assignment 24
 * [ ] line thickness/weight/height
 * [ ] icons or fancier icons or WHATEVER ELSE YOU FIND!!!
 * [ ] Source Placeholder images
+
 ###Final touches
 * [ ] Make pixel perfect
