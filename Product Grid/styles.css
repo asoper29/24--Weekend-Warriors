@@ -18,7 +18,7 @@ ul {
 }
 
 section {
-  margin-bottom: 10ex;
+  margin-bottom: 14ex;
 }
 
 section li {
@@ -44,7 +44,6 @@ img {
   border: 3pt solid #47A3DA;
   position: relative;
   padding: 14% 10.3%;
-  cursor: pointer;
 }
 
 .back {
