@@ -7,6 +7,9 @@
 body:hover{
   background-image:url('png.png');
 } */
+body{
+  background-color:white;
+}
 #f1_container {
   position: relative;
   margin: 10px auto;
@@ -25,7 +28,7 @@ body:hover{
 }
 #f1_container:hover #f1_card {
   transform: rotateY(180deg);
-  box-shadow: -5px 5px 5px #aaa;
+  box-shadow: 0px 0px 0px #aaa;
 }
 .face {
   position: absolute;
@@ -40,5 +43,5 @@ body:hover{
   padding: 10px;
   color: white;
   text-align: center;
-  background-color: #aaa;
+  background-color: white;
 }
