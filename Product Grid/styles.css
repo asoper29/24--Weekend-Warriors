@@ -4,6 +4,12 @@ body {
 
 a {
   color: #47A3DA;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FFF;
+  background-color: #47A3DA; 
 }
 
 #container {
@@ -31,10 +37,12 @@ section {
 }
 
 img {
-  height: auto;
-  width: auto;
+  height: 78%;
+  width: 78%;
   border: 2px solid #47A3DA;
   position: relative;
+  padding: 14% 10.4%;
+  cursor: pointer;
 }
 
 .back {
