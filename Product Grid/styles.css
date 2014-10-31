@@ -7,11 +7,6 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  color: #FFF;
-  background-color: #47A3DA; 
-}
-
 #container {
   width: 80%;
   margin: auto;
@@ -26,22 +21,29 @@ section {
   margin-bottom: 10ex;
 }
 
+section li {
+  position: relative;
+}
+
 .fa-repeat {
   float: right;
   text-align: center;
-  border-left: 0.3em solid #47a3da;
-  border-bottom: 0.3em solid #47a3da;
-  height: 33pt;
-  width: 33pt;
+  border-left: 3pt solid #47a3da;
+  border-bottom: 3pt solid #47a3da;
+  height: 26pt;
+  width: 26pt;
   color: #47a3da;
+  line-height: 30pt;
+  position: absolute;
+  left: 85%;
 }
 
 img {
   height: 78%;
   width: 78%;
-  border: 2px solid #47A3DA;
+  border: 3pt solid #47A3DA;
   position: relative;
-  padding: 14% 10.4%;
+  padding: 14% 10.3%;
   cursor: pointer;
 }
 
