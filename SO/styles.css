@@ -95,7 +95,7 @@ ul {
   height: 62px;
 }
 
-.menu>li>ul>li>a>img {
+.open img {
   max-height: 50px;
   max-width: 50px;
   margin: 0 1ex 0 3ex;
