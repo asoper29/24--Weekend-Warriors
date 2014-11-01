@@ -43,7 +43,6 @@ ul {
 
 .menu > li {
   margin: 0;
-  padding-left: 3em;
   background-color: #47A3DA;
   width: 102%;
 }
@@ -72,7 +71,6 @@ ul {
 }
 
 .menu ul {
-  margin: 0 -3em;
   width: 100%;
 }
 
@@ -83,6 +81,11 @@ ul {
   padding-bottom: 5px;
   padding-top: 0;
   line-height: 6ex;
+  color: #0263A0;
+}
+
+.menu > ul h3:nth-child(n+4) {
+  color: white;
 }
 
 .menu ul>li {
@@ -99,6 +102,7 @@ ul {
   padding-top: 6px;
 }
 
+
 span {
   color: #9C9C9C;
   width: 50%;
@@ -106,4 +110,10 @@ span {
   font-size: 1em;
   display: inline-block;
   position: absolute;
+}
+
+@media (min-width: 405px) {
+  .menu ul>li {
+    border-bottom: none;
+  }
 }
