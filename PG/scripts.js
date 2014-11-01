@@ -6,7 +6,7 @@ onClick event should give css transition class
 
 SPAN fa-fa-repeat
 IMG  front <-next sibling
-IMG  back
+IMG  back <-next/previous sibling
 
 */
 
@@ -21,15 +21,21 @@ function clickRepeatIcon(event){
 }
 
 
-
-
-
 // Ramblings -Nhare
+
+//Toggle? If/else? Both?
+//Query? New concepts.
+
 
 // function flipIt (){
 //
 // }
 //
+// function makeFront(){
+//}
+//
+// function makeBack(){
+//}
 // function isFront (){
 //   return (display === 'initial');
 // }
