@@ -1,38 +1,3 @@
-/* Div Divider/Container Color */
-
-background-color: #47A3DA
-
-
-/* Page Background Color for page */
-
-background-color: #FFFFFF
-
-/* Div Gray Divider Container Color */
-
-background-color: #F7F7F7;
-
-
-
-/* Media Query Widths:
-
-Small (Mobile) : 400px
-Medium (Landscape) : 823px
-Large (Tablet) : 880px
-X-Large (Desktop) : 1440px
-
-*/
-
-/*
-
-Sizes :
-
-*/
-
-font-family: 'Lato', Calibri, Arial, sans-serif;
-
-----
-
-
 html, body {
   font-size: 14pt;
   font-family: 'Lato', Calibri, Arial, sans-serif;
@@ -42,7 +7,7 @@ h1, h2, h3, h4, h5, h6 {
   color: inherit;
 }
 h3 {
-  color: white;
+  color: red;
 
 }
 
@@ -68,30 +33,15 @@ li {
   /* background-color: #47A3DA  ; */
 }
 
-.menu h3:hover {
-  color: #02639D;
-}
-
 .menu ul {
   margin: 1ex -3em;
   width: 100%;
 }
 
-/*======  submenu list  ======*/
+
 .menu > li .submenu {
-  display: block;
+  display: none;
 }
-
-
-/*==== color change, test that each beverage gets its own hover ====*/
-.menu > li .submenu > li:hover {
-  transition-property: color;
-  transition-duration: 0.4s;
-  transition-timing-function: ease-out;
-  color: red;
-}
-
-
 .menu > li.open .submenu {
   display: block;
 }

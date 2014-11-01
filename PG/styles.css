@@ -1,0 +1,195 @@
+body {
+  margin: 0;
+}
+
+a {
+  color: #47A3DA;
+  text-decoration: none;
+}
+
+#container {
+  width: 80%;
+  margin: auto;
+}
+
+#container:hover #shirt {
+  transform: rotateY(180deg);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+section {
+  margin-bottom: 14ex;
+  position: relative;
+  border: 3px solid #47a3da;
+}
+
+.fa-repeat {
+  float: right;
+  text-align: center;
+  border-left: 3px solid #47a3da;
+  border-bottom: 3px solid #47a3da;
+  height: 36px;
+  width: 36px;
+  color: #47a3da;
+  line-height: 27pt;
+  position: absolute;
+  right: 0;
+  font-size: 16pt;
+}
+
+img {
+  height: 76%;
+  width: 80%;
+  /* border: 3pt solid #47A3DA; */
+  position: relative;
+  padding: 14% 10%;
+}
+
+.back {
+  display: none;
+}
+
+nav {
+  width: 100%;
+  margin-top: -1%;
+  position: relative;
+}
+
+nav ul {
+  overflow: hidden;
+  border-top: 3px solid #47a3da;
+  margin: 0;
+  margin-bottom: -7.4px;
+  width: 100%;
+  height: 55px;
+  }
+
+nav ul > li {
+  float: left;
+  width: 19.2%;
+  height: 100%;
+  /* border-bottom: 3pt solid #47a3da; */
+  border-left: 3px solid #47a3da;
+  text-align: center;
+  line-height: 40pt;
+  font-size: 20pt;
+}
+
+nav ul li:first-child {
+  border-left: none;
+}
+
+nav ul > li span.xl {
+  position: absolute;
+  font-family: 'Lato', Calibri, Arial, sans-serif;
+  text-align: center;
+  text-indent: -10px;
+}
+
+nav ul > li span .fa:before {
+  position: absolute;
+}
+
+li > .footer {
+  width: inherit;
+  font-family: 'Lato', Calibri, Arial, sans-serif;
+  margin-top: 1ex;
+}
+
+.name {
+  float: left;
+  color: #47a3da;
+  font-size: 1.8em;
+  width: 45%;
+  margin: 1ex 0;
+}
+
+.price {
+  font-size: 22pt;
+  font-weight: bold;
+  color: rgb(71, 163, 218);
+  float: right;
+  margin: 1ex 0;
+}
+
+#shirt {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 1.0s linear;
+}
+
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.face.back {
+  display: block;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+  padding: 10px;
+  color: white;
+  text-align: center;
+}
+
+h1{
+  font-size: 17px;
+  font-family: 'Lato', Calibri, Arial, sans-serif;
+  color: #47a3da;
+  text-align: center;
+  letter-spacing: .5em;
+}
+
+h2{
+  font-size: 35px;
+  font-family: 'Lato', Calibri, Arial, sans-serif;
+  color: #47a3da;
+  text-align: center;
+  font-weight: normal;
+
+}
+
+@media (min-width: 460px) {
+nav ul > li {
+  width: 19.33%;
+  }
+}
+
+@media (min-width: 738px) {
+
+}
+
+@media (min-width: 800px) {
+
+}
+
+@media (min-width: 880px) {
+  #container {
+    -webkit-column-count: auto;
+    -webkit-column-gap: 40px;
+    -webkit-column-width: 300px;
+  }
+  ul {
+    margin-top: 0;
+  }
+  nav ul > li {
+    width: 19.26%;
+    }
+}
+
+@media (min-width: 1090px) {
+  /* #container {
+    -webkit-column-count: 3;
+  } */
+  nav ul > li {
+    width: 19.04%;
+    }
+}
+
