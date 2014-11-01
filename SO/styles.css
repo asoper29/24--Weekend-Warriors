@@ -14,7 +14,7 @@ body{
   margin: 0;
 }
 
-html, body, {
+html, body, a {
   font-size: 14pt;
   font-family: 'Lato', Calibri, Arial, sans-serif;
   margin: 0 0;
@@ -86,7 +86,7 @@ ul {
 span {
   color: #9C9C9C;
   width: 50%;
-  line-height: 3em;
+  line-height: 4em;
   font-size: 1em;
   display: inline-block;
   position: absolute;
