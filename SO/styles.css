@@ -62,8 +62,8 @@ ul {
   font-size: 50px;
   color: #2A89C2
 }
-.menu>li:nth-child(-n+3):before:hover:{
-  color: #8CC5E8;
+.menu>li:nth-child(-n+3):before:hover {
+  color: white;
 
 }
 
@@ -93,6 +93,11 @@ ul {
 
   .menu > li > h3:hover {
     color: #FFFFFF;
+  }
+  .menu > li > h3:hover + .submenu {
+    transition-property: opacity;
+    transition-duration: 0.8s;
+    opacity: 0;
   }
 
 .menu ul>li {
@@ -127,7 +132,14 @@ a img {
   opacity: 1;
 }
 a:hover img {
-  transition-property: opacity, width;
+  transition-property: opacity;
   transition-duration: 0.25s;
   opacity: 0.5;
+}
+
+
+.submenu {
+  transition-property: opacity;
+  transition-duration: 1s;
+  opacity: 1;
 }
