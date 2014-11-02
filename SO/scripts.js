@@ -18,7 +18,6 @@ function clickNavItem(event){
   }
 }
 
-
 function isOpen(element){
   return (element.className === 'open');
 }
