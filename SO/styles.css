@@ -53,7 +53,7 @@ ul {
   font-weight: normal;
 }
 
-.menu>li:nth-child(-n+3):before {
+.menu > li:nth-child(-n+3):before {
   content: '\02C4';
   position: absolute;
   right: 4%;
@@ -62,7 +62,7 @@ ul {
   color: #2A89C2
 }
 
-.open>ul:nth-child(-n+3):before {
+.open > ul:nth-child(-n+3):before {
   content: '\25BC';
   position: absolute;
   right: 46%;
@@ -89,7 +89,7 @@ ul {
   color: white;
 }
 
-.menu ul>li {
+.menu ul > li {
   background-color: #F7F7F7;
   width: 100%;
   border-bottom: #CECECE solid 1px;
@@ -100,7 +100,7 @@ ul {
   background-color: #F7F7F7;
 }
 
-.open>ul>li>a>img {
+.open > ul > li > a > img {
   max-height: 50px;
   max-width: 50px;
   margin: 0 1ex 0 3ex;
@@ -117,18 +117,18 @@ span {
   position: absolute;
 }
 
-@media (min-width: 405px) {
-  .menu ul>li {
+@media (min-width: 400px) {
+  .menu ul > li {
     border-bottom: none;
   }
-  .menu ul>li {
+  .menu ul > li {
     width: 30%;
     display: inline-block;
   }
   a {
     padding: 1px;
   }
-  .open>ul>li>a>img {
+  .open > ul > li > a > img { /* Separated the space between > for legibility - XD */
     max-width: 100%;
     max-height: 250px;
     padding: 2em 1em 0em 1em;
