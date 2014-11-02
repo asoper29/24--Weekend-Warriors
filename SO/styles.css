@@ -121,6 +121,13 @@ a:hover span {
   color: #88888E;
 }
 
-a:hover img{
-  width: 2em;
+a img {
+  transition-property: opacity;
+  transition-duration: 0.25s;
+  opacity: 1;
+}
+a:hover img {
+  transition-property: opacity, width;
+  transition-duration: 0.25s;
+  opacity: 0.5;
 }
