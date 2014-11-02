@@ -118,6 +118,10 @@ span {
 }
 
 @media (min-width: 405px) {
+  .menu ul {
+    width: 85%;
+    margin: auto;
+  }
   .menu ul>li {
     border-bottom: none;
   }
@@ -132,16 +136,15 @@ span {
     max-width: 100%;
     max-height: 250px;
     padding: 2em 1em 0em 1em;
-    margin: 0;
+    margin: auto;
+    margin-bottom: -14px;
   }
   span {
-    width: 11pc;
+    width: 7pc;
     position: relative;
     text-align: center;
     display: block;
-    margin-top: -6.6ex;
-    top: 5ex;
-    padding-bottom: 4ex;
-
+    margin: auto;
+    padding: 0 1em;
   }
 }
