@@ -159,12 +159,9 @@ span {
     width: 20%;
   }
 
-  .open > ul > li {
-    float: left;
-    width: 16.6%;
-    height: auto;
-  }
-
+.open > ul > li {
+  width: 16%;
+}
   .open ul {
     background-color: #F7F7F7;
     text-align: center;
@@ -187,4 +184,21 @@ span {
     position: relative;
     z-index: 100;
   }
+  .open>ul:nth-child(-n+3):before {
+    content: ' ';
+    position: absolute;
+    right: 46%;
+    margin-top: -1ex;
+    font-size: 21pt;
+    color: #47A3DA;
+  }
+  .menu>li>h3::after {
+    content: '\25BC';
+    position: absolute;
+    right: 46%;
+    margin-top: -1ex;
+    font-size: 21pt;
+    color: #47A3DA;
+  }
+
 }
