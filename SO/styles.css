@@ -223,11 +223,20 @@ ul.submenu li {
     color: #47A3DA;
   }
   .menu>li>h3::after {
-    content: '\25BC';
+    content: ' ';
     position: absolute;
     right: 46%;
     margin-top: -1ex;
     font-size: 21pt;
     color: #47A3DA;
+  }
+
+  .menu>li:nth-child(-n+3):before {
+    content: ' ';
+    position: absolute;
+    right: 4%;
+    padding-top: 0.5ex;
+    font-size: 50px;
+    color: #2A89C2
   }
 }
