@@ -148,3 +148,43 @@ span {
     padding: 0 1em;
   }
 }
+
+@media (min-width: 860px){
+  ul {
+    position: relative;
+  }
+
+  ul.menu > li {
+    float: left;
+    width: 20%;
+  }
+
+  .open > ul > li {
+    float: left;
+    width: 16.6%;
+    height: auto;
+  }
+
+  .open ul {
+    background-color: #F7F7F7;
+    text-align: center;
+  }
+
+  .menu {
+    width: 100%;
+    margin: auto;
+  }
+
+  .menu ul {
+    width: 100%;
+    position: absolute;
+    left: 0;
+  }
+
+  .menu>li:nth-child(-n+3):after {
+    top: -0.3em;
+    right: -37%;
+    position: relative;
+    z-index: 100;
+  }
+}
