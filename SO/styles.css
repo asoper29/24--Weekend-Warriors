@@ -83,6 +83,7 @@ ul {
   padding-bottom: 5px;
   padding-top: 0;
   line-height: 6ex;
+  color: 02639d;
 }
 
 .menu ul>li {
@@ -106,4 +107,8 @@ span {
   font-size: 1em;
   display: inline-block;
   position: absolute;
+}
+
+span:hover {
+  color: #88888E;
 }
