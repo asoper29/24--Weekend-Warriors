@@ -117,10 +117,27 @@ span {
   position: absolute;
 }
 
-@media (min-width: 405px) {
-  .menu ul>li {
-    border-bottom: none;
+
+  /* Reset box shadows for the 6 items in row case */
+  .menu ul > li:nth-child(-n+6),
+  .menu ul > li:nth-child(6n+1) {
+    box-shadow: -28px 0 0 -27px #ddd, 0 -28px 0 -27px #ddd;
   }
+
+  /* First 4 items don't have upper box shadow */
+  .menu ul > li:nth-child(-n+3) {
+    box-shadow: -28px 0 0 -27px #ddd;
+  }
+
+  /* Every 5th item does not have a left box shadow */
+  .menu ul > li:nth-child(3n+1) {
+    box-shadow:  0 -28px 0 -27px #ddd;
+  }
+
+@media (min-width: 405px) {
+ /* .menu ul>li {
+    border-bottom: none;
+  }*/
   .menu ul>li {
     width: 30%;
     display: inline-block;
