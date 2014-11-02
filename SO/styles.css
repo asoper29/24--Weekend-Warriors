@@ -141,7 +141,6 @@ ul.submenu li {
 .menu ul.submenu > li:nth-child(3n+1) {
   /*box-shadow:  0 -28px 0 -27px blue; for testing! */
     box-shadow:  0 -28px 0 -27px #ddd;
-
 }
 
 @media (min-width: 405px) {
@@ -149,7 +148,7 @@ ul.submenu li {
     border-bottom: none;
   }
 
-  .menu ul>li {
+
 
 @media (min-width: 400px) {
   .menu ul > li {
