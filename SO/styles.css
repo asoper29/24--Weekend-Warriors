@@ -117,27 +117,37 @@ span {
   position: absolute;
 }
 
+ul.submenu li {
+  height: auto;
+}
 
-  /* Reset box shadows for the 6 items in row case */
-  .menu ul > li:nth-child(-n+6),
-  .menu ul > li:nth-child(6n+1) {
-    box-shadow: -28px 0 0 -27px #ddd, 0 -28px 0 -27px #ddd;
-  }
+/* Reset box shadows for the 6 items in row case */
+/* pick the :nth-child(6) and below */
+.menu ul.submenu > li:nth-child(-n+6),
+.menu ul.submenu > li:nth-child(6n+1) {
+/*    box-shadow: -28px 0 0 -27px red, 0 -28px 0 -27px red; for testing! */
+  box-shadow: -28px 0 0 -27px #ddd, 0 -28px 0 -27px #ddd;
+}
 
-  /* First 4 items don't have upper box shadow */
-  .menu ul > li:nth-child(-n+3) {
-    box-shadow: -28px 0 0 -27px #ddd;
-  }
+/* First 4 items don't have upper box shadow */
+/* pick the :nth-child(3) and below */
+.menu ul.submenu > li:nth-child(-n+3) {
+  /*box-shadow: -28px 0 0 -27px magenta; for testing! */
+  box-shadow: -28px 0 0 -27px #ddd;
+}
 
-  /* Every 5th item does not have a left box shadow */
-  .menu ul > li:nth-child(3n+1) {
+/* Every 5th item does not have a left box shadow */
+.menu ul.submenu > li:nth-child(3n+1) {
+  /*box-shadow:  0 -28px 0 -27px blue; for testing! */
     box-shadow:  0 -28px 0 -27px #ddd;
-  }
+
+}
 
 @media (min-width: 405px) {
- /* .menu ul>li {
+  .menu ul>li {
     border-bottom: none;
-  }*/
+  }
+
   .menu ul>li {
     width: 30%;
     display: inline-block;
