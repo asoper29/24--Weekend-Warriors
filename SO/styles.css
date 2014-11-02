@@ -44,7 +44,7 @@ ul {
 .menu > li {
   margin: 0;
   background-color: #47A3DA;
-  width: 102%;
+  width: 100%;
 }
 
 .menu h3 {
@@ -61,10 +61,11 @@ ul {
   font-size: 50px;
   color: #2A89C2
 }
-.menu>li>ul:nth-child(-n+3):before {
+
+.open>ul:nth-child(-n+3):before {
   content: '\25BC';
   position: absolute;
-  right: 48%;
+  right: 46%;
   margin-top: -1ex;
   font-size: 21pt;
   color: #47A3DA;
@@ -76,7 +77,7 @@ ul {
 
  .menu > li > h3 {
   height: 5.18ex;
-  margin: 0 0 1px -6em;
+  margin-bottom: 1px;
   text-align: center;
   padding-bottom: 5px;
   padding-top: 0;
@@ -95,7 +96,11 @@ ul {
   height: 62px;
 }
 
-.open img {
+.open {
+  background-color: #F7F7F7;
+}
+
+.open>ul>li>a>img {
   max-height: 50px;
   max-width: 50px;
   margin: 0 1ex 0 3ex;
@@ -115,5 +120,28 @@ span {
 @media (min-width: 405px) {
   .menu ul>li {
     border-bottom: none;
+  }
+  .menu ul>li {
+    width: 30%;
+    display: inline-block;
+  }
+  a {
+    padding: 1px;
+  }
+  .open>ul>li>a>img {
+    max-width: 100%;
+    max-height: 250px;
+    padding: 2em 1em 0em 1em;
+    margin: 0;
+  }
+  span {
+    width: 11pc;
+    position: relative;
+    text-align: center;
+    display: block;
+    margin-top: -6.6ex;
+    top: 5ex;
+    padding-bottom: 4ex;
+
   }
 }
