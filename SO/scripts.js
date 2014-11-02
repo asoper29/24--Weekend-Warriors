@@ -6,7 +6,7 @@ var = somethingMagical
 
 function (something) {
   if (you click on shit)
-    open.menu || ;
+    open.menu || close.menu.ifOpen;
   else (don't do shit)
 }
 
