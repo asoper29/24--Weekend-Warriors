@@ -91,14 +91,7 @@ ul {
   color: 02639d;
 }
 
-  .menu > li > h3:hover {
-    color: #FFFFFF;
-  }
-  .menu > li > h3:hover + .submenu {
-    transition-property: opacity;
-    transition-duration: 0.8s;
-    opacity: 0;
-  }
+
 
 .menu ul>li {
   background-color: #F7F7F7;
@@ -114,6 +107,18 @@ ul {
   padding-top: 6px;
 }
 
+
+/*==========*/
+
+/*
+.menu > li > h3:hover {
+  color: #FFFFFF;
+}
+.menu > li > h3:hover + .submenu {
+  transition-property: opacity;
+  transition-duration: 0.8s;
+  opacity: 0;
+}
 span {
   color: #9C9C9C;
   width: 50%;
@@ -138,8 +143,10 @@ a:hover img {
 }
 
 
+
 .submenu {
   transition-property: opacity;
   transition-duration: 1s;
   opacity: 1;
 }
+*/
