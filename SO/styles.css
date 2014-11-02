@@ -62,6 +62,10 @@ ul {
   font-size: 50px;
   color: #2A89C2
 }
+.menu>li:nth-child(-n+3):before:hover:{
+  color: #8CC5E8;
+}
+
 .menu>li>ul:nth-child(-n+3):before {
   content: '\25BC';
   position: absolute;
@@ -86,6 +90,10 @@ ul {
   color: 02639d;
 }
 
+  .menu > li > h3:hover {
+    color: #FFFFFF;
+  }
+
 .menu ul>li {
   background-color: #F7F7F7;
   width: 100%;
@@ -108,7 +116,6 @@ span {
   display: inline-block;
   position: absolute;
 }
-
 span:hover {
   color: #88888E;
 }
