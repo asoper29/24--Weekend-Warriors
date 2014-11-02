@@ -16,8 +16,7 @@ var repeatIcons = document.getElementsByTagName('span');
       });
 
 function clickRepeatIcon(event){
-    var self = this;
-    if(self.nextSibling.className == "start"){
+    if(this.nextSibling.className == "start"){
         this.nextSibling.className += " flipped";
     }
     else{
