@@ -64,6 +64,7 @@ ul {
 }
 .menu>li:nth-child(-n+3):before:hover:{
   color: #8CC5E8;
+
 }
 
 .menu>li>ul:nth-child(-n+3):before {
@@ -116,6 +117,10 @@ span {
   display: inline-block;
   position: absolute;
 }
-span:hover {
+a:hover span {
   color: #88888E;
+}
+
+a:hover img{
+  width: 2em;
 }
