@@ -7,10 +7,6 @@ body {
   margin: auto;
 }
 
-#container:hover #shirt {
-  transform: rotateY(180deg);
-}
-
 ul {
   list-style-type: none;
   padding: 0;
@@ -34,25 +30,13 @@ section {
   position: absolute;
   right: 0;
   font-size: 16pt;
-  z-index: 1;
+  z-index: 2;
 }
 
 .fa.fa-repeat:hover {
   background-color: #47a3da;
   color: white;
   cursor: pointer;
-}
-
-img {
-  height: 76%;
-  width: 80%;
-  /* border: 3pt solid #47A3DA; */
-  position: relative;
-  padding: 14% 10%;
-}
-
-.back {
-  display: none;
 }
 
 nav {
@@ -102,8 +86,6 @@ nav ul li:first-child {
   border-left: none;
 }
 
-
-
 nav ul > li span.xl {
   position: absolute;
   font-family: 'Lato', Calibri, Arial, sans-serif;
@@ -135,29 +117,6 @@ li > .footer {
   color: rgb(71, 163, 218);
   float: right;
   margin: 1ex 0;
-}
-
-#shirt {
-  width: 100%;
-  height: 100%;
-  transform-style: preserve-3d;
-  transition: all 1.0s linear;
-}
-
-.face {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-}
-
-.face.back {
-  display: block;
-  transform: rotateY(180deg);
-  box-sizing: border-box;
-  padding: 10px;
-  color: white;
-  text-align: center;
 }
 
 h1{
@@ -220,11 +179,86 @@ h2{
   background-color: #47a3da;
 }
 
+.flip {
+  position: relative;
+  margin: 0;
+  padding-bottom: 4%;
+  width: 100%;
+  height: 400px;
+  z-index: 1;
+  -webkit-backface-visibility: hidden;
+}
+.shirt {
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+  transition: transform 0.4s ease-out;
+}
+.flip:hover .shirt {
+  transform: rotateY(180deg);
+}
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+}
+.face.back1 {
+  display: block;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+  padding: 10px;
+  color: white;
+  text-align: center;
+}
+
+/* img {
+  height: 76%;
+  width: 80%;
+  position: relative;
+  padding: 14% 10%;
+} */
+
+.front1.face > img {
+  padding: 10% 9%;
+  /* position: absolute; */
+  /* top: 4%; */
+  /* right: 0%; */
+  /* bottom: 24%; */
+  height: 80%;
+  width: 80%;
+}
+
+.face.back1 > img {
+  padding: 10% 9%;
+/* position: absolute; */
+/* top: 4%; */
+/* right: 0%; */
+/* bottom: 24%; */
+height: 80%;
+width: 80%;
+/*   padding: 2%;
+position: absolute;
+top: 4%;
+right: 3%;
+bottom: 24%;
+height: 83%;
+width: 90%; */
+}
+
+
 @media (min-width: 460px) {
 nav ul > li {
   width: 19.33%;
   }
+/* .front1.face > img {
+  height: 75%;
+  width: 80%;
 }
+.face.back1 > img {
+  height: 75%;
+  width: 80%;
+} */
 
 @media (min-width: 738px) {
 
