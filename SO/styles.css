@@ -117,6 +117,7 @@ span {
   position: absolute;
 }
 
+
 @media (min-width: 405px) {
   .menu ul {
     width: 85%;
@@ -187,4 +188,3 @@ span {
     position: relative;
     z-index: 100;
   }
-}
