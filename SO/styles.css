@@ -93,14 +93,24 @@ ul {
 .menu > li > h3:hover {
   color: #FFFFFF;
 }
+
+
+/*  Sample effect test hover on.
+Here, hovering over the h3 block will cause
+.open to fade out....*/
 .menu > li > h3:hover +.open> ul > li {
   transition-property: opacity;
   transition-duration: 1s;
   opacity: 0;
 }
+
+/* ...and hovering off the h3 block will
+make .open fade back in. This section is what's
+important as writing onClick to the menu tabs
+should result in this code here. */
 .open > ul > li {
   transition-property: opacity;
-  transition-duration: 1s;
+  transition-duration: 0.4s;
   opacity: 1;
 }
 
