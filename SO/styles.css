@@ -62,9 +62,6 @@ ul {
   color: #2A89C2
 }
 
-/*.menu>li:nth-child(-n+3):hover:before{
-  color: white;
-}*/
 
 .open>ul:nth-child(-n+3):before {
   content: '\25BC';
@@ -89,9 +86,24 @@ ul {
   color: #0263A0;
 }
 
+.menu > ul h3:nth-child(n+4) {
+  color: white;
+}
+
 .menu > li > h3:hover {
   color: #FFFFFF;
 }
+.menu > li > h3:hover +.open> ul > li {
+  transition-property: opacity;
+  transition-duration: 1s;
+  opacity: 0;
+}
+.open > ul > li {
+  transition-property: opacity;
+  transition-duration: 1s;
+  opacity: 1;
+}
+
 
 .menu > ul h3:nth-child(n+4) {
   color: white;
@@ -140,16 +152,7 @@ a:hover img {
   opacity: 0.5;
 }
 
-.menu > li > h3:hover+.open > ul > li {
-  transition-property: opacity;
-  transition-duration: 1s;
-  opacity: 0;
-}
-.open > ul > li {
-  transition-property: opacity;
-  transition-duration: 1s;
-  opacity: 1;
-}
+
 
 @media (min-width: 405px) {
   .menu ul {
