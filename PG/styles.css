@@ -194,9 +194,11 @@ h2{
   -webkit-transform-style: preserve-3d;
   transition: transform 0.4s ease-out;
 }
-.flip:hover .shirt {
+
+.awesome {
   transform: rotateY(180deg);
 }
+
 .face {
   position: absolute;
   width: 100%;
@@ -259,6 +261,7 @@ nav ul > li {
   height: 75%;
   width: 80%;
 } */
+}
 
 @media (min-width: 738px) {
 
@@ -269,17 +272,43 @@ nav ul > li {
 }
 
 @media (min-width: 880px) {
-  #container {
-    -webkit-column-count: auto;
-    -webkit-column-gap: 40px;
+    .colFix {
+     position: initial;
+     z-index: 0;
+   }
+    ul#products {
+    margin: 0;
+    padding-left:0;
+    -webkit-column-count:auto;
+    -webkit-column-gap:1.5em;
     -webkit-column-width: 300px;
-  }
+    /* max-height: 1700px; */
+    overflow: auto;
+   }
+   ul#products section {
+     vertical-align: top;
+   }
   ul {
     margin-top: 0;
   }
   nav ul > li {
     width: 19.26%;
     }
+  .oddBall {
+    right: 51.3%;
+  }
+  .oddBall2 {
+    right: 10%;
+    top: 17.2%;
+  }
+  .oddBall3 {
+    right: 10%;
+    top: 91.4%;
+  }
+  .oddBall4 {
+    right: 10%;
+    top: 165.4%;
+  }
 }
 
 @media (min-width: 1090px) {
@@ -289,4 +318,27 @@ nav ul > li {
   nav ul > li {
     width: 19.04%;
     }
+}
+
+@media (min-width: 1200px) {
+  .oddBall {
+    right: 37.4%;
+    top: 17.2%;
+  }
+  .oddBall2 {
+    right: 10%;
+    top: 17.2%;
+  }
+  .oddBall3 {
+    right: 37.4%;
+    top: 91.2%;
+  }
+  .oddBall4 {
+    right: 10%;
+    top: 91.2%;
+  }
+
+  .bottom {
+    margin-bottom: 101px;
+  }
 }
