@@ -116,6 +116,36 @@ span {
   display: inline-block;
   position: absolute;
 }
+ul.submenu li {
+  height: auto;
+}
+
+/* Reset box shadows for the 6 items in row case */
+/* pick the :nth-child(6) and below */
+.menu ul.submenu > li:nth-child(-n+11), /*was .menu ul.submenu > li:nth-child(-n+6)*/
+.menu ul.submenu > li:nth-child(9n+3) { /*.menu ul.submenu > li:nth-child(6n+1) */
+    box-shadow: -28px 0 0 -27px #CECECE, 0 -28px 0 -27px #CECECE;
+  /*box-shadow: -28px 0 0 -27px #ddd, 0 -28px 0 -27px #ddd;*/
+}
+
+/* First 4 items don't have upper box shadow */
+/* pick the :nth-child(3) and below */
+.menu ul.submenu > li:nth-child(-n+3) {
+  box-shadow: -28px 0 0 -27px #CECECE;
+  /*box-shadow: -28px 0 0 -27px #ddd;*/
+}
+
+/* Every 5th item does not have a left box shadow */
+.menu ul.submenu > li:nth-child(3n+1) {
+  box-shadow:  0 -28px 0 -27px #CECECE;
+    /*box-shadow:  0 -28px 0 -27px #ddd;*/
+}
+
+/* First items do not have a top box shadow */
+.menu ul.submenu > li:first-child {
+  box-shadow: none;
+}
+
 
 @media (min-width: 405px) {
   .menu ul {
@@ -159,11 +189,10 @@ span {
     width: 20%;
   }
 
-  .open > ul > li {
-    float: left;
-    width: 16.6%;
-    height: auto;
-  }
+
+.open > ul > li {
+  width: 16%;
+}
 
   .open ul {
     background-color: #F7F7F7;
@@ -186,5 +215,30 @@ span {
     right: -37%;
     position: relative;
     z-index: 100;
+  }
+  .open>ul:nth-child(-n+3):before {
+    content: ' ';
+    position: absolute;
+    right: 46%;
+    margin-top: -1ex;
+    font-size: 21pt;
+    color: #47A3DA;
+  }
+  .menu>li>h3::after {
+    content: ' ';
+    position: absolute;
+    right: 46%;
+    margin-top: -1ex;
+    font-size: 21pt;
+    color: #47A3DA;
+  }
+
+  .menu>li:nth-child(-n+3):before {
+    content: ' ';
+    position: absolute;
+    right: 4%;
+    padding-top: 0.5ex;
+    font-size: 50px;
+    color: #2A89C2
   }
 }
