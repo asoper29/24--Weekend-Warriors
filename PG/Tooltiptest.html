@@ -1,0 +1,313 @@
+<!doctype html>
+
+<html>
+  <head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <style>
+/* ul {
+    padding: 0;
+    margin:0;
+  }
+  ul li {
+    list-style-type: none;
+   margin-left: 17px;
+  } */
+.tooltip-wrapper {
+  outline: 3px solid #47a3da;
+  float:left;
+  height: 53%;
+  width: 87px;
+  height: 209px;
+  padding: 3px;
+  line-height:48px;
+  text-indent: 4px;
+  clear:both;
+  position: absolute;
+  top: -250px;
+  background-color: #fff;
+  opacity: 0;
+}
+/* .hoverTip {
+    position:relative;
+    top:0px;
+    left:0px;
+} */
+
+  .sizes {
+    width: 50px;
+    height: 50px;
+  }
+  .sizes li {
+    background: url('tshirt.png') center center no-repeat;
+    width:100%;
+    height: 100%;
+    background-color: #ffffff;
+
+  }
+ .sizes li:hover   {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+}
+  .sizes {
+    font-size: 12px;
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    color: #47a3da;
+    text-align: center;
+    text-indent: 21;
+  }
+  .fa-male:hover   {
+  color: #0968a1;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  transform: scale(1.1);
+}
+ .fa-male:hover .tooltip-wrapper {
+   opacity: 1;
+ }
+.XL {
+    width: 44px;
+    height: 44px;
+    line-height: 44px;
+  }
+.L {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+  }
+  .M {
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+  }
+  .S {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-top: none;
+  }
+/* .sizes:after {
+content: "\25C0";
+display: block;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  color: lightblue;
+  margin-top:2px;
+  padding-top: 1px;
+  top:210px;
+  position:absolute;
+  left: 36px;
+}​
+  .S:hover  {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+} */
+  </style>
+
+
+  <body>
+   <header>
+    <h1>BLUEPRINT<span class="fa fa-question-circle"></span></h1>
+    <h2>Responsive Product Grid Element</h2>
+   </header>
+    <div id="container">
+      <ul id="products">
+       <section>
+        <li>
+          <span class="fa fa-repeat"></span>
+          <div class="flip">
+           <div class="shirt">
+            <div class="front1 face">
+             <img src="http://tympanus.net/Blueprints/ProductGridLayout/images/1_front.png"/>
+            </div>
+            <div class="face back1">
+             <img src="http://tympanus.net/Blueprints/ProductGridLayout/images/1_back.png"/>
+            </div>
+           </div>
+          </div>
+        <nav>
+          <ul>
+           <li><span class="fa fa-refresh"></span></li>
+           <li><span class="fa fa-heart-o"></span></li>
+           <li>
+             <!-- <div class="hoverTip"> -->
+               <span class="fa fa-male"></span>
+
+                <div class="tooltip-wrapper">
+                  <ul class="sizes">
+
+                  <li><class="XL">XL</li>
+                  <li><class="L">L</li>
+                  <li><class="M">M</li>
+                  <li><class="S">S</li>
+                  </ul>
+
+                </div>
+              <!-- </div> -->
+
+           </li>
+           <li><span class="fa fa-square blue"></span></li>
+           <li><span class="fa fa-shopping-cart"></span></li>
+          </ul>
+        </nav>
+          <div class="footer">
+            <p class="name">Save My Trees</p>
+            <p class="price">$29</p>
+          </div>
+        </li>
+       </section>
+       <section>
+       <li>
+         <span class="fa fa-repeat"></span>
+         <div class="flip">
+          <div class="shirt">
+           <div class="front1 face">
+            <img src="http://tympanus.net/Blueprints/ProductGridLayout/images/2_front.png"/>
+           </div>
+           <div class="face back1">
+            <img src="http://tympanus.net/Blueprints/ProductGridLayout/images/2_back.png"/>
+           </div>
+          </div>
+         </div>
+         <nav>
+         <ul>
+          <li><span class="fa fa-refresh"></span></li>
+          <li><span class="fa fa-heart-o"></span></li>
+          <li><span class="fa fa-male"></span></li>
+          <li><span class="fa fa-square pink"></span></li>
+          <li><span class="fa fa-shopping-cart"></span></li>
+         </ul>
+         </nav>
+         <div class="footer">
+           <p class="name">Save My Trees</p>
+           <p class="price">$19</p>
+         </div>
+       </li>
+      </section>
+      <section class="colFix">
+       <li>
+         <span class="fa fa-repeat oddBall" style=""></span>
+         <div class="flip">
+          <div class="shirt">
+           <div class="front1 face">
+            <img src="http://tympanus.net/Blueprints/ProductGridLayout/images/3_front.png"/>
+           </div>
+           <div class="face back1">
+            <img src="http://tympanus.net/Blueprints/ProductGridLayout/images/3_back.png"/>
+           </div>
+          </div>
+         </div>
+         <nav>
+         <ul>
+          <li><span class="fa fa-refresh"></span></li>
+          <li><span class="fa fa-heart-o"></span></li>
+          <li><span class="fa fa-male"></span></li>
+          <li><span class="fa fa-square orange"></span></li>
+          <li><span class="fa fa-shopping-cart"></span></li>
+         </ul>
+         </nav>
+         <div class="footer">
+           <p class="name">Save My Trees</p>
+           <p class="price">$29</p>
+         </div>
+       </li>
+      </section>
+      <section class="colFix bottom">
+       <li>
+         <span class="fa fa-repeat oddBall2"></span>
+         <div class="flip">
+          <div class="shirt">
+           <div class="front1 face">
+            <img src="http://tympanus.net/Blueprints/ProductGridLayout/images/4_front.png"/>
+           </div>
+           <div class="face back1">
+            <img src="http://tympanus.net/Blueprints/ProductGridLayout/images/4_back.png"/>
+           </div>
+          </div>
+         </div>
+         <nav>
+         <ul>
+          <li><span class="fa fa-refresh"></span></li>
+          <li><span class="fa fa-heart-o"></span></li>
+          <li><span class="fa fa-male"></span></li>
+          <li><span class="fa fa-square green"></span></li>
+          <li><span class="fa fa-shopping-cart"></span></li>
+         </ul>
+         </nav>
+         <div class="footer">
+           <p class="name">Save My Trees</p>
+           <p class="price">$19</p>
+         </div>
+       </li>
+      </section>
+      <section class="colFix">
+       <li>
+         <span class="fa fa-repeat oddBall3"></span>
+         <div class="flip">
+          <div class="shirt">
+           <div class="front1 face">
+            <img src="http://tympanus.net/Blueprints/ProductGridLayout/images/3_front.png"/>
+           </div>
+           <div class="face back1">
+            <img src="http://tympanus.net/Blueprints/ProductGridLayout/images/3_back.png"/>
+           </div>
+          </div>
+         </div>
+         <nav>
+         <ul>
+          <li><span class="fa fa-refresh"></span></li>
+          <li><span class="fa fa-heart-o"></span></li>
+          <li><span class="fa fa-male"></span></li>
+          <li><span class="fa fa-square orange"></span></li>
+          <li><span class="fa fa-shopping-cart"></span></li>
+         </ul>
+         </nav>
+         <div class="footer">
+           <p class="name">Save My Trees</p>
+           <p class="price">$39</p>
+         </div>
+       </li>
+      </section>
+      <section class="colFix">
+       <li>
+         <span class="fa fa-repeat oddBall4"></span>
+         <div class="flip">
+          <div class="shirt">
+           <div class="front1 face">
+            <img src="http://tympanus.net/Blueprints/ProductGridLayout/images/1_front.png"/>
+           </div>
+           <div class="face back1">
+            <img src="http://tympanus.net/Blueprints/ProductGridLayout/images/1_back.png"/>
+           </div>
+          </div>
+         </div>
+         <nav>
+         <ul>
+          <li><span class="fa fa-refresh"></span></li>
+          <li><span class="fa fa-heart-o"></span></li>
+          <li><span class="fa fa-male"></span></li>
+          <li><span class="fa fa-square blue"></span></li>
+          <li><span class="fa fa-shopping-cart"></span></li>
+         </ul>
+         </nav>
+         <div class="footer">
+           <p class="name">Save My Trees</p>
+           <p class="price">$29</p>
+         </div>
+       </li>
+      </section>
+      </ul>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
