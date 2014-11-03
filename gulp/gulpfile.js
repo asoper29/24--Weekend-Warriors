@@ -14,8 +14,8 @@ gulp.task('css', function() {
     .pipe(gulp.dest('test/css'));
 });
 
-// This part sets up
+// This part sets up the watch service to update, in near real-time, the changes made to the CSS files in the dev/css/ directory.
 
 gulp.watch('dev/css/*.css', function(){
-    gulp.run('css');
+    gulp.run('css');  // This is the action being looped.
 });
