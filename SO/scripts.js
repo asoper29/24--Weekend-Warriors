@@ -23,6 +23,7 @@ function clickNavItem(event){
    }
 }
 
+
 /**
  * @param HTMLElement element
  * @return Boolean if `element` is "open"
