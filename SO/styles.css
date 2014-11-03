@@ -83,7 +83,7 @@ ul {
   padding-bottom: 5px;
   padding-top: 0;
   line-height: 6ex;
-  color: #0263A0;
+  color: #FFFFFF;
 }
 
 .menu > ul h3:nth-child(n+4) {
@@ -91,40 +91,38 @@ ul {
 }
 
 .menu > li > h3:hover {
-  color: #FFFFFF;
+  /*color: #FFFFFF;*/
+  color: #0263A0;
 }
 
-
-/*  Sample effect test hover on.
-Here, hovering over the h3 block will cause
-.open to fade out....*/
-.menu > li > h3:hover +.open> ul > li {
-  transition-property: opacity;
-  transition-duration: 1s;
-  opacity: 0;
-}
-
-/* ...and hovering off the h3 block will
-make .open fade back in. This section is what's
-important as writing onClick to the menu tabs
-should result in this code here. */
-.open > ul > li {
-  transition-property: opacity;
-  transition-duration: 0.4s;
-  opacity: 1;
-}
 
 
 .menu > ul h3:nth-child(n+4) {
   color: white;
 }
 
-.menu ul>li {
+
+
+/*.menu ul>li {
   background-color: #F7F7F7;
   width: 100%;
   border-bottom: #CECECE solid 1px;
   height: 62px;
 }
+
+
+.menu > li > h3:hover +.open> ul > li {
+  max-height: 0px;
+  transition: max-height 0.25s ease-out;
+}
+
+.open.submenu> ul > li {
+  transition-property: opacity;
+  transition-duration: 1s;
+  opacity: 1;
+}
+
+*/
 
 .open {
   background-color: #F7F7F7;
